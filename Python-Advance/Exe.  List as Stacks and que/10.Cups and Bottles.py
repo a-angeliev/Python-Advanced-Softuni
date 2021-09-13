@@ -1,7 +1,5 @@
-cups = input().split()
-bottles = input().split()
-cups = [int(x) for x in cups]
-bottles = [int(x) for x in bottles]
+cups = [int(x) for x in input().split()]
+bottles = [int(x) for x in input().split()]
 wasted = 0
 currnet_cup = cups[0]
 while cups:
