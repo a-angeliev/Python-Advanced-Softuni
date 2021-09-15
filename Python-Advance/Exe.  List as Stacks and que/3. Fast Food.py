@@ -14,4 +14,4 @@ if que:
     que = [str(x) for x in que]
     print(f"Orders left: {' '.join(que)}")
 else:
-    print("Orders complate")
+    print("Orders complete")

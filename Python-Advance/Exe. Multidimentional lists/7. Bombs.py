@@ -3,9 +3,25 @@ matrix = []
 
 
 for row in range(rows):
-    matrix.append([int(x) for x in input().split()])
+    matrix.append(input().split())
 
-booms_cor =  input().split()
+for row in range(rows):
+    for j in range(rows):
+        element = matrix[row][j]
+        if not element.isalpha():
+            matrix[row][j] = int(element)
+        else:
+            matrix[row][j] = 10000
+
+
+booms_cor = input().split()
+for i in range(len(booms_cor)-1 ,0 , -1):
+    currnet_el = booms_cor.pop(i)
+
+    if not currnet_el in booms_cor:
+        booms_cor.insert(i,currnet_el)
+
+
 
 for bomb in booms_cor:
     row, col = bomb.split(",")
@@ -49,5 +65,6 @@ for row in range(rows):
     for col in range(rows):
         print(matrix[row][col], end = " ")
     print()
+
 
 

@@ -34,5 +34,5 @@ while not command == "END":
         break
     command = input()
 if not is_crashed:
-    print("Everyone is safe")
+    print("Everyone is safe.")
     print(f"{succsses_car} total cars passed the crossroads.")

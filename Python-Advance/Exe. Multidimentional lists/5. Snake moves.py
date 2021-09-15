@@ -40,5 +40,5 @@ for i in range(rows*cols):
 
 for i in range(rows):
     for j in range(cols):
-        print(matrix[i][j], end = " ")
+        print(matrix[i][j], end = "")
     print()
