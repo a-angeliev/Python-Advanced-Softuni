@@ -28,4 +28,4 @@ currnet_el = ""
 for el in all_int:
     if len(el) > len(currnet_el):
         currnet_el = el
-print(f"Longest intersection is {list(currnet_el)} wiht lengh {len(currnet_el)}")
+print(f"Longest intersection is {list(currnet_el)} with length {len(currnet_el)}")

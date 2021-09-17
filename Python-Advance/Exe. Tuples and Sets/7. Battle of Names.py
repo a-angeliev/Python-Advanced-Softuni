@@ -1,6 +1,6 @@
 lines = int(input())
-odd_set = set()
-even_set = set()
+odd_set = []
+even_set = []
 current_ascii = 0
 for i in range(lines):
     name = input()
@@ -8,9 +8,9 @@ for i in range(lines):
         current_ascii += ord(el)
     current_ascii = int(current_ascii/ (i+1))
     if current_ascii % 2 == 0:
-        odd_set.add(current_ascii)
+        odd_set.append(current_ascii)
     else:
-        even_set.add(current_ascii)
+        even_set.append(current_ascii)
     current_ascii = 0
 even_sum = sum(even_set)
 odd_sum = sum(odd_set)
