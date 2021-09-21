@@ -12,6 +12,8 @@ while not command[0] == "END":
         col = int(command[2])
         value = int(command[3])
         if 0 <= row < rows and 0<= col < len(matrix[row]):
+
+            # this is not necessary
             if command[0] == "Add":
                 matrix[row][col] += value
             else:
