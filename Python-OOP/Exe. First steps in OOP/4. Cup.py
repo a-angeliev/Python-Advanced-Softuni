@@ -10,6 +10,7 @@ class Cup:
     def status(self):
         return self.size - self.quantity
 
+
 cup = Cup(100, 50)
 print(cup.status())
 cup.fill(40)

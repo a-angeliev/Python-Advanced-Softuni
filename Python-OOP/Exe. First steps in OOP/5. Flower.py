@@ -1,16 +1,16 @@
 class Flower:
 
-    def __init__(self, name, water_requirements,is_happy = False):
+    def __init__(self, name, water_requirements, is_happy=False):
         self.name = name
         self.water_requirements = water_requirements
         self.is_happy = is_happy
 
-    def water(self,quantity):
+    def water(self, quantity):
         if int(quantity) >= self.water_requirements:
             self.is_happy = True
 
     def status(self):
-        return f"{self.name} is happy" if self.is_happy == True else f"{self.name} is not happy"
+        return f"{self.name} is happy" if self.is_happy is True else f"{self.name} is not happy"
 
 
 flower = Flower("Lilly", 100)
