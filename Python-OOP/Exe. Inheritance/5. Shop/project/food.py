@@ -6,3 +6,7 @@ class Food(Product):
         self.name = name
         self.quantity = 15
 
+salam = Food("salam")
+print(salam.quantity)
+salam.increase(10)
+print(salam.quantity)
