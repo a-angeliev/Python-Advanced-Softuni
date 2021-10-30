@@ -33,13 +33,8 @@ class Group:
         all_people = self.people + other.people
         return Group.new_group(f"{self.name} {other.name}", all_people)
 
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if not self.people:
-            raise StopIteration
-        return self.people.__next__()
+    def __getitem__(self, item):
+        return f"Person {item}: {self.people[item]}"
 
 
 
@@ -58,9 +53,6 @@ second_group = Group('Special', [p3, p4])
 third_group = first_group + second_group
 
 print(len(first_group))
-print(first_group.people)
-for pl in first_group.people:
-    print(pl)
 print(second_group)
 print(third_group[0])
 
